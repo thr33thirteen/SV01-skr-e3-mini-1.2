@@ -719,7 +719,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.00, 80.00, 396.00, 418.50 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.00, 80.00, 400.00, 418.50 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1053,7 +1053,7 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 290
+#define X_BED_SIZE 280
 #define Y_BED_SIZE 250
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
@@ -1717,8 +1717,8 @@
 // Note: Test audio output with the G-Code:
 //  M300 S<frequency Hz> P<duration ms>
 //
-//#define LCD_FEEDBACK_FREQUENCY_DURATION_MS 2
-//#define LCD_FEEDBACK_FREQUENCY_HZ 5000
+#define LCD_FEEDBACK_FREQUENCY_DURATION_MS 20
+#define LCD_FEEDBACK_FREQUENCY_HZ 1000
 
 //=============================================================================
 //======================== LCD / Controller Selection =========================
